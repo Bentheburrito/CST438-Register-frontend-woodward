@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import SchedList from './components/SchedList';
 import Semester from './components/Semester';
+import AddStudent from './components/AddStudent'
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
            <Typography variant="h6" color="inherit">
             Course Registration
            </Typography>
-        </Toolbar>
+			  </Toolbar>
+			  <AddStudent/>
       </AppBar>
       <BrowserRouter>
        <Switch>
