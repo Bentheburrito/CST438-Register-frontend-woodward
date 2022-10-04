@@ -80,10 +80,10 @@ class AddStudent extends Component {
             <Dialog open={this.state.open} onClose={this.handleClose}>
                 <DialogTitle>Add Student</DialogTitle>
                 <DialogContent  style={{paddingTop: 20}} >
-					  <TextField autoFocus fullWidth label="Email" name="email" onChange={this.handleEmailChange} /> 
-					  <TextField autoFocus fullWidth label="Name" name="name" onChange={this.handleNameChange}  /> 
-					  <TextField autoFocus fullWidth label="Status" name="status" onChange={this.handleStatusChange}  /> 
-					  <TextField autoFocus fullWidth label="Status Code" name="status_code" onChange={this.handleStatusCodeChange}  /> 
+					  <TextField autoFocus fullWidth placeholder="Student's email" label="Email" name="email" onChange={this.handleEmailChange} /> 
+					  <TextField autoFocus fullWidth placeholder="Student's name" label="Name" name="name" onChange={this.handleNameChange}  /> 
+					  <TextField autoFocus fullWidth placeholder="Student's registration status" label="Status" name="status" onChange={this.handleStatusChange}  /> 
+					  <TextField autoFocus fullWidth placeholder="Student's registration status code" label="Status Code" name="status_code" onChange={this.handleStatusCodeChange}  /> 
                 </DialogContent>
                 <DialogActions>
                   <Button color="secondary" onClick={this.handleClose}>Cancel</Button>
